@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JITware: The Era of Just-In-Time Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #cbd5e1; /* Slate 300 */
+        }
+        h1, h2, h3, h4, .mono-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose-text {
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #22d3ee, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .link-term {
+            color: #22d3ee;
+            border-bottom: 1px solid rgba(34, 211, 238, 0.3);
+            transition: all 0.2s;
+        }
+        .link-term:hover {
+            border-bottom-color: #22d3ee;
+            text-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
+        }
+         a {
+        color: #2563eb; /* Blue-600 */
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 2px solid #dbeafe; /* Light Blue Underline */
+        padding: 0 2px;
+        transition: all 0.2s ease-in-out;
+    }
+    </style>
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Hero Section -->
+    <header class="py-24 px-6 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight tracking-tight mono-font">
+                <span class="gradient-text">JITware</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-white font-medium mb-10 mono-font">
+                The Era of Just-In-Time Software
+            </h2>
+            <p class="text-xl md:text-2xl text-slate-400 font-light leading-relaxed max-w-3xl">
+                We are transitioning from an era of software <span class="text-white font-medium">acquisition</span>—where code is treated as inventory—to an era of software <span class="text-white font-medium">generation</span>.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- The Core Concept (Manifesto Style) -->
+        <section id="manifesto" class="py-24 px-6">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <div class="prose-text text-slate-300">
+                    <p class="mb-8">
+                        For forty years, software has been treated as a durable, static asset. Whether purchased off a shelf (SaaS), downloaded from a repository (Open Source), or built by internal teams, it was an object requiring discovery, installation, and painful maintenance.
+                    </p>
+                    <p class="mb-8 pl-6 border-l-2 border-cyan-500 text-slate-100 italic">
+                        The assumption was always the same: software is a monument you build, then protect.
+                    </p>
+                    <p class="mb-8">
+                        <strong>JITware</strong> inverts this assumption. It applies the principles of Lean Manufacturing to code. In the 1970s, Toyota revolutionized manufacturing by proving that static inventory is waste.
+                    </p>
+                    <p>
+                        JITware applies this to engineering. Code is not an asset; it is a liability. It rots, requires security patches, and adds cognitive load. JITware adopts the philosophy of <strong>Continuous Generation</strong>. Whether an application lasts for five minutes or five years, its code is never a fixed statue. It is a living stream—regenerated, extended, and adapted on-demand to fit the evolving context.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 pt-8">
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-2 mono-font">01. Ephemeral Implementation</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            The <em>application</em> may last for years, but the <em>implementation</em> is transient. When requirements shift, we don't carefully patch the old code—we regenerate it. The code itself is disposable; the capability is persistent.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-2 mono-font">02. Serviced Debt</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Technical debt still exists, but it is paid off in real-time by the fleet. Refactoring is no longer a dreaded quarterly project; it is a continuous background process handled by AI agents. We carry the <em>Spec</em> forward, while agents handle the underlying churn.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-2 mono-font">03. Agentic Stewardship</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Historically, Rapid Dev (Low-Code/No-Code) platforms were rigid and unmaintained. JITware is different: it employs active AI agents to continuously maintain, secure, and enhance the codebase, providing the speed of Low-Code without the stagnation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scenarios -->
+        <section id="scenarios" class="py-20 px-6 bg-slate-800/50 border-y border-slate-800">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-white mb-12 mono-font">What Does It Look Like?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-colors">
+                        <div class="w-10 h-10 bg-blue-900/50 rounded flex items-center justify-center mb-4 text-blue-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">The Data Analyst</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            <span class="text-red-400 block mb-1">Old Way:</span> Search for ETL tools, learn syntax, debug API keys. Hours lost.
+                        </p>
+                        <p class="text-slate-300 text-sm">
+                            <span class="text-cyan-400 block mb-1">JITware:</span> She describes the merge. The script runs. Next month, she asks for a new column; the script is regenerated to include it instantly.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-colors">
+                         <div class="w-10 h-10 bg-purple-900/50 rounded flex items-center justify-center mb-4 text-purple-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">The Migration</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            <span class="text-red-400 block mb-1">Old Way:</span> Write a custom parser for 2,000 legacy files. Handle edge cases. Half-day work.
+                        </p>
+                        <p class="text-slate-300 text-sm">
+                            <span class="text-cyan-400 block mb-1">JITware:</span> Provide 3 examples. Agent generates converter, validates, runs. If the format shifts, the converter is updated on the fly.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-colors">
+                         <div class="w-10 h-10 bg-green-900/50 rounded flex items-center justify-center mb-4 text-green-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">The Internal Tool</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            <span class="text-red-400 block mb-1">Old Way:</span> Don't build it because it takes 3 days. Use a messy spreadsheet instead.
+                        </p>
+                        <p class="text-slate-300 text-sm">
+                            <span class="text-cyan-400 block mb-1">JITware:</span> Describe requirements. System builds UI. As the team grows, they update the spec, and the app evolves—regenerated, not refactored.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Advantages (Split View) -->
+        <section id="advantages" class="py-24 px-6 bg-slate-900 border-b border-slate-800">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-white mb-16 mono-font text-center">The JITware Advantage</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12 md:gap-24">
+                    
+                    <!-- Column 1: For Engineers -->
+                    <div class="space-y-8">
+                        <div class="border-b border-slate-800 pb-4 mb-6">
+                            <h3 class="text-xl text-cyan-400 font-bold mono-font uppercase tracking-wider">For The Engineer</h3>
+                            <p class="text-slate-500 text-sm mt-2">Eliminating the Inventory Tax</p>
+                        </div>
+                        
+                        <div class="relative pl-8 border-l border-slate-800">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-slate-700"></div>
+                            <h4 class="text-white font-bold mb-2">Eliminating "Search & Evaluate"</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Professional development is often 20% coding and 80% logistics: scouring GitHub, checking commit histories, and evaluating abandoned libraries. JITware eliminates this. The code is bespoke, generated fresh for your context, with no "dead" dependencies.
+                            </p>
+                        </div>
+
+                        <div class="relative pl-8 border-l border-slate-800">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-slate-700"></div>
+                            <h4 class="text-white font-bold mb-2">Integration is Generation</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Instead of fighting with version conflicts and reading documentation that assumes knowledge you don't have, the integration happens at generation time. The code is built *to* fit your system.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: For Business -->
+                    <div class="space-y-8">
+                        <div class="border-b border-slate-800 pb-4 mb-6">
+                            <h3 class="text-xl text-blue-400 font-bold mono-font uppercase tracking-wider">For The Business</h3>
+                            <p class="text-slate-500 text-sm mt-2">The Next Evolution of Rapid Dev</p>
+                        </div>
+
+                        <div class="relative pl-8 border-l border-slate-800">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-slate-700"></div>
+                            <h4 class="text-white font-bold mb-2">Beyond Low-Code / No-Code</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Traditional Low-Code platforms promised speed but delivered vendor lock-in and unmaintainable "spaghetti" logic. JITware delivers standard, portable code (Python, JS, etc.) that you own, but without the maintenance overhead.
+                            </p>
+                        </div>
+
+                        <div class="relative pl-8 border-l border-slate-800">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-slate-700"></div>
+                            <h4 class="text-white font-bold mb-2">Outcome-Centric</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Business users care about the report, the dashboard, or the automation—not the software asset. JITware aligns engineering effort directly with business value, reducing the "Time to Outcome" from weeks to minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- The Agentic Architecture -->
+        <section id="architecture" class="py-24 px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-8 mono-font">The Agentic Harness</h2>
+                        <div class="prose-text text-slate-300 mb-8">
+                            <p>
+                                JITware is not autocomplete. It is not "Copilot but more." It is a fundamentally different architecture powered by environments where a fleet of specialized AI agents collaborate to build the software.
+                            </p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="p-4 bg-slate-800/50 rounded border border-slate-800">
+                                <strong class="text-white block mb-1 font-mono text-sm uppercase tracking-wider text-cyan-500">The Architect</strong>
+                                <span class="text-slate-400 text-sm">Analyzes the user's natural language specification, identifies ambiguities, asks clarifying questions, and produces a structural plan.</span>
+                            </div>
+                            <div class="p-4 bg-slate-800/50 rounded border border-slate-800">
+                                <strong class="text-white block mb-1 font-mono text-sm uppercase tracking-wider text-blue-500">The Engineer</strong>
+                                <span class="text-slate-400 text-sm">Writes the actual implementation code based on the plan. It understands idioms and best practices for the target language.</span>
+                            </div>
+                            <div class="p-4 bg-slate-800/50 rounded border border-slate-800">
+                                <strong class="text-white block mb-1 font-mono text-sm uppercase tracking-wider text-purple-500">The QA Agent</strong>
+                                <span class="text-slate-400 text-sm">Generates test cases from the Spec *before* the code is written. Runs tests and reports failures.</span>
+                            </div>
+                            <div class="p-4 bg-slate-800/50 rounded border border-slate-800">
+                                <strong class="text-white block mb-1 font-mono text-sm uppercase tracking-wider text-red-500">The Refactorer</strong>
+                                <span class="text-slate-400 text-sm">Diagnoses failures and iterates. It doesn't just retry; it makes targeted corrections until tests pass.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Representation of Spec as Source -->
+                    <div class="space-y-12">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white mb-8 mono-font">Spec as Authority</h2>
+                            <p class="text-slate-300 mb-6 leading-relaxed">
+                                This is the critical conceptual shift: <strong>The Specification is the Golden Truth.</strong>
+                            </p>
+                            <p class="text-slate-300 mb-6 leading-relaxed">
+                                In JITware, the Prompt (the Spec) serves as the authoritative blueprint. While the generated source code remains the functional machinery that is versioned and deployed, the Spec is the intent that drives it.
+                            </p>
+                            <ul class="space-y-4 mt-8">
+                                <li class="flex items-start">
+                                    <span class="text-cyan-400 mr-3 mt-1.5 text-xs">●</span>
+                                    <p class="text-slate-400 text-sm"><strong class="text-white">Long-Lived Intent:</strong> We commit Specs to repositories alongside the code. The Spec persists as the "Source of Truth" for what the application is <em>supposed</em> to do.</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-400 mr-3 mt-1.5 text-xs">●</span>
+                                    <p class="text-slate-400 text-sm"><strong class="text-white">Driven Implementation:</strong> The underlying code is derived from the Spec. Changes begin with the Spec, flowing downstream to the implementation via the agentic fleet.</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-400 mr-3 mt-1.5 text-xs">●</span>
+                                    <p class="text-slate-400 text-sm"><strong class="text-white">Debugging:</strong> When something goes wrong, you often debug the Spec first. Was the requirement unclear? Did we miss an edge case in the instructions?</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-slate-900 border border-slate-700 p-6 rounded-lg font-mono text-xs text-slate-400">
+                            <div class="mb-2 text-slate-500">// git log --oneline (Spec History)</div>
+                            <div class="mb-1"><span class="text-yellow-500">a1b2c3d</span> Spec update: Add dark mode preference</div>
+                            <div class="mb-1"><span class="text-yellow-500">e4f5g6h</span> Feature req: filter users by signup_date</div>
+                            <div class="mb-1"><span class="text-yellow-500">i7j8k9l</span> Initial spec: internal dashboard v1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Economics -->
+        <section id="economics" class="py-24 px-6 bg-slate-800/30 border-t border-slate-800">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-white mb-6 mono-font text-center">Why Now? The Economic Threshold</h2>
+                <p class="text-center text-slate-400 max-w-2xl mx-auto mb-16">
+                    JITware became viable when a specific economic threshold was crossed: the cost of generating code dropped below the cost of searching for it.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Old Economics -->
+                    <div class="bg-slate-900/50 p-8 rounded-xl border border-slate-700">
+                        <h3 class="text-red-400 font-bold mb-6 mono-font uppercase tracking-wider text-sm">The Cost of Inventory</h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            The "Inventory" model imposes a tax on every project. It forces developers to spend hours—sometimes days—searching for libraries, reading documentation for features they don't need, fighting with dependency conflicts, and integrating code that was never designed for their specific use case.
+                        </p>
+                        <p class="text-slate-400 text-sm">
+                             This context-switching and integration friction is the hidden cost of the Open Source era. It is time spent <em>managing</em> software rather than creating value.
+                        </p>
+                    </div>
+
+                    <!-- New Economics -->
+                    <div class="bg-slate-900/50 p-8 rounded-xl border border-cyan-900/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                        <h3 class="text-cyan-400 font-bold mb-6 mono-font uppercase tracking-wider text-sm">The Generation Arbitrage</h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            In contrast, JITware offers a massive efficiency arbitrage. Writing a clear natural language specification is fast. Generating the code is instantaneous and cheap.
+                        </p>
+                        <p class="text-slate-400 text-sm">
+                            Because the code is generated specifically for the task at hand, the integration cost drops to near zero. The developer spends their time defining the <em>what</em> (the Spec), and the system handles the <em>how</em> (the Code).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Conclusion / Agentic Enterprise -->
+        <section id="conclusion" class="py-24 px-6 bg-slate-900 border-t border-slate-800">
+             <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-white mb-10 mono-font">The Agentic Enterprise</h2>
+                <div class="prose-text text-slate-300 max-w-3xl mx-auto leading-loose">           
+<p>
+    The <a href="https://theagenticenterprise.net">Agentic Enterprise</a> fuses human creativity with machine scale. By <a href="https://offloadingbook.com">Offloading</a> routine work to <a href="https://agenticdevelopment.ai">Agentic Development</a> swarms, teams can <a href="https://shedandshift.ai">Shed and Shift</a> focus to high-value strategy.
+</p>
+<p>
+    Here, <a href="https://specdriven.ai">SpecDriven</a> intent and Vibe Engineering replace rigid syntax. This empowers anyone to instantly generate <a href="https://jitware.net">JITware</a>, tactical software created on demand without engineering overhead.
+</p>
+                  
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-16 border-t border-slate-800 text-center">
+            <div class="max-w-2xl mx-auto px-6">
+                <div class="text-slate-600 text-sm mono-font">
+                    &copy; 2025 JITware.ai 
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
